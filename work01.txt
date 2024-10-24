@@ -1,0 +1,263 @@
+
+mysql> create database ruhande;
+Query OK, 1 row affected (0.02 sec)
+
+mysql> create table ngoma('id','fname','lname','gender','province','district','sector','cell','email','telephone');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''id','fname','lname','gender','province','district','sector','cell','email','tel' at line 1
+mysql> create table ngoma('id int','fname char(15)','lname char(15)','gender char(15)','province char(15)','district char(15)','sector char(15)','cell char(15)','email char(15)','telephone char(25)');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''id int','fname char(15)','lname char(15)','gender char(15)','province char(15)'' at line 1
+mysql> create table ngoma(id int,f-name char(15),l-name char(15),gender char(15),province char(15),district char(15),sector char(15),cell char(15),email char(15),telephone char(25));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-name char(15),l-name char(15),gender char(15),province char(15),district char(1' at line 1
+mysql> create table ngoma(id int,fname char(15),lname char(15),gender char(15),province char(15),district char(15),sector char(15),cell char(15),email char(15),telephone char(25));
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> insert into ngoma values('1','set','when','f','south','huye','ngoma','ruhande','email@gmail','0785562201');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into ngoma values('1','theo','when','f','south','huye','ngoma','ruhande','email@gmail','0785562201');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into ngoma values('1','kagabo','when','f','south','huye','ngoma','ruhande','email@gmail','0785562201');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into ngoma values('1','kagabo','eric','m','south','huye','ngoma','ruhande','email@gmail','0785562201');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into ngoma values('1','kagame','eric','m','south','huye','ngoma','ruhande','email@gmail','0785562201');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into ngoma values('2','theo','when','f','south','huye','ngoma','ruhande','email@gmail','0785562201');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into ngoma values('3','kagabo','when','f','south','huye','ngoma','ruhande','email@gmail','0785562201');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into ngoma values('4','kagabo','eric','m','south','huye','ngoma','ruhande','email@gmail','0785562201');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into ngoma values('5','kagame','eric','m','south','huye','ngoma','ruhande','email@gmail','0785562201');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into ngoma values('6','kalisa','aime','m','south','huye','ngoma','ruhande','email@gmail','0785562201');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into ngoma values('7','evariste','ndayambaje','m','south','huye','ngoma','ruhande','email@gmail','0785562201');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into ngoma values('8','esther','ndayambaje','f','south','huye','ngoma','ruhande','email@gmail','0785562201');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into ngoma values('9','abimana','sandra','f','south','huye','ngoma','ruhande','email@gmail','0785562201');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into ngoma values('10','abe','sandrine','f','south','huye','ngoma','ruhande','email@gmail','0785562201');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select*from ngoma;
++------+----------+------------+--------+----------+----------+--------+---------+-------------+------------+
+| id   | fname    | lname      | gender | province | district | sector | cell    | email       | telephone  |
++------+----------+------------+--------+----------+----------+--------+---------+-------------+------------+
+|    1 | set      | when       | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |
+|    1 | theo     | when       | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |
+|    1 | kagabo   | when       | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |
+|    1 | kagabo   | eric       | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |
+|    1 | kagame   | eric       | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |
+|    2 | theo     | when       | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |
+|    3 | kagabo   | when       | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |
+|    4 | kagabo   | eric       | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |
+|    5 | kagame   | eric       | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |
+|    6 | kalisa   | aime       | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |
+|    7 | evariste | ndayambaje | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |
+|    8 | esther   | ndayambaje | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |
+|    9 | abimana  | sandra     | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |
+|   10 | abe      | sandrine   | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |
++------+----------+------------+--------+----------+----------+--------+---------+-------------+------------+
+14 rows in set (0.00 sec)
+
+mysql> alter table ngoma drop id;
+Query OK, 14 rows affected (0.05 sec)
+Records: 14  Duplicates: 0  Warnings: 0
+
+mysql> select*from ngoma;
++----------+------------+--------+----------+----------+--------+---------+-------------+------------+
+| fname    | lname      | gender | province | district | sector | cell    | email       | telephone  |
++----------+------------+--------+----------+----------+--------+---------+-------------+------------+
+| set      | when       | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |
+| theo     | when       | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |
+| kagabo   | when       | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |
+| kagabo   | eric       | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |
+| kagame   | eric       | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |
+| theo     | when       | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |
+| kagabo   | when       | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |
+| kagabo   | eric       | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |
+| kagame   | eric       | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |
+| kalisa   | aime       | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |
+| evariste | ndayambaje | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |
+| esther   | ndayambaje | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |
+| abimana  | sandra     | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |
+| abe      | sandrine   | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |
++----------+------------+--------+----------+----------+--------+---------+-------------+------------+
+14 rows in set (0.00 sec)
+
+mysql> alter table ngoma add id int(15);
+Query OK, 14 rows affected, 1 warning (0.04 sec)
+Records: 14  Duplicates: 0  Warnings: 1
+
+mysql> select*from ngoma;
++----------+------------+--------+----------+----------+--------+---------+-------------+------------+------+
+| fname    | lname      | gender | province | district | sector | cell    | email       | telephone  | id   |
++----------+------------+--------+----------+----------+--------+---------+-------------+------------+------+
+| set      | when       | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 | NULL |
+| theo     | when       | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 | NULL |
+| kagabo   | when       | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 | NULL |
+| kagabo   | eric       | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 | NULL |
+| kagame   | eric       | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 | NULL |
+| theo     | when       | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 | NULL |
+| kagabo   | when       | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 | NULL |
+| kagabo   | eric       | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 | NULL |
+| kagame   | eric       | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 | NULL |
+| kalisa   | aime       | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 | NULL |
+| evariste | ndayambaje | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 | NULL |
+| esther   | ndayambaje | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 | NULL |
+| abimana  | sandra     | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 | NULL |
+| abe      | sandrine   | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 | NULL |
++----------+------------+--------+----------+----------+--------+---------+-------------+------------+------+
+14 rows in set (0.00 sec)
+
+mysql> update ngoma set id=(1,2,3,4,5,6,7,8,9,10);
+ERROR 1241 (21000): Operand should contain 1 column(s)
+mysql> update ngoma set id=1;
+Query OK, 14 rows affected (0.00 sec)
+Rows matched: 14  Changed: 14  Warnings: 0
+
+mysql> select*from ngoma;
++----------+------------+--------+----------+----------+--------+---------+-------------+------------+------+
+| fname    | lname      | gender | province | district | sector | cell    | email       | telephone  | id   |
++----------+------------+--------+----------+----------+--------+---------+-------------+------------+------+
+| set      | when       | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| theo     | when       | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| kagabo   | when       | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| kagabo   | eric       | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| kagame   | eric       | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| theo     | when       | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| kagabo   | when       | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| kagabo   | eric       | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| kagame   | eric       | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| kalisa   | aime       | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| evariste | ndayambaje | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| esther   | ndayambaje | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| abimana  | sandra     | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| abe      | sandrine   | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
++----------+------------+--------+----------+----------+--------+---------+-------------+------------+------+
+14 rows in set (0.00 sec)
+
+mysql> update ngoma set id=1,2,3,4,5,6,7,8,9,10;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '2,3,4,5,6,7,8,9,10' at line 1
+mysql> update ngoma set id='1,2,3,4,5,6,7,8,9,10';
+Query OK, 0 rows affected, 14 warnings (0.00 sec)
+Rows matched: 14  Changed: 0  Warnings: 14
+
+mysql> select*from ngoma;
++----------+------------+--------+----------+----------+--------+---------+-------------+------------+------+
+| fname    | lname      | gender | province | district | sector | cell    | email       | telephone  | id   |
++----------+------------+--------+----------+----------+--------+---------+-------------+------------+------+
+| set      | when       | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| theo     | when       | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| kagabo   | when       | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| kagabo   | eric       | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| kagame   | eric       | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| theo     | when       | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| kagabo   | when       | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| kagabo   | eric       | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| kagame   | eric       | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| kalisa   | aime       | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| evariste | ndayambaje | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| esther   | ndayambaje | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| abimana  | sandra     | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| abe      | sandrine   | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
++----------+------------+--------+----------+----------+--------+---------+-------------+------------+------+
+14 rows in set (0.00 sec)
+
+mysql> update ngoma set id=1;
+Query OK, 0 rows affected (0.00 sec)
+Rows matched: 14  Changed: 0  Warnings: 0
+
+mysql> select fname,lname,email from ngoma;
++----------+------------+-------------+
+| fname    | lname      | email       |
++----------+------------+-------------+
+| set      | when       | email@gmail |
+| theo     | when       | email@gmail |
+| kagabo   | when       | email@gmail |
+| kagabo   | eric       | email@gmail |
+| kagame   | eric       | email@gmail |
+| theo     | when       | email@gmail |
+| kagabo   | when       | email@gmail |
+| kagabo   | eric       | email@gmail |
+| kagame   | eric       | email@gmail |
+| kalisa   | aime       | email@gmail |
+| evariste | ndayambaje | email@gmail |
+| esther   | ndayambaje | email@gmail |
+| abimana  | sandra     | email@gmail |
+| abe      | sandrine   | email@gmail |
++----------+------------+-------------+
+14 rows in set (0.00 sec)
+
+mysql> select*from ngoma where gender='m';
++----------+------------+--------+----------+----------+--------+---------+-------------+------------+------+
+| fname    | lname      | gender | province | district | sector | cell    | email       | telephone  | id   |
++----------+------------+--------+----------+----------+--------+---------+-------------+------------+------+
+| kagabo   | eric       | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| kagame   | eric       | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| kagabo   | eric       | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| kagame   | eric       | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| kalisa   | aime       | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| evariste | ndayambaje | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
++----------+------------+--------+----------+----------+--------+---------+-------------+------------+------+
+6 rows in set (0.00 sec)
+
+mysql> select*from ngoma where gender='m' and fname='kalisa';
++--------+-------+--------+----------+----------+--------+---------+-------------+------------+------+
+| fname  | lname | gender | province | district | sector | cell    | email       | telephone  | id   |
++--------+-------+--------+----------+----------+--------+---------+-------------+------------+------+
+| kalisa | aime  | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
++--------+-------+--------+----------+----------+--------+---------+-------------+------------+------+
+1 row in set (0.00 sec)
+
+mysql> select*from ngoma where gender='f' or lname='eric';
++---------+------------+--------+----------+----------+--------+---------+-------------+------------+------+
+| fname   | lname      | gender | province | district | sector | cell    | email       | telephone  | id   |
++---------+------------+--------+----------+----------+--------+---------+-------------+------------+------+
+| set     | when       | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| theo    | when       | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| kagabo  | when       | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| kagabo  | eric       | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| kagame  | eric       | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| theo    | when       | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| kagabo  | when       | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| kagabo  | eric       | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| kagame  | eric       | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| esther  | ndayambaje | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| abimana | sandra     | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| abe     | sandrine   | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
++---------+------------+--------+----------+----------+--------+---------+-------------+------------+------+
+12 rows in set (0.00 sec)
+
+mysql> select*from ngoma where gender='f' and fname='kalisa';
+Empty set (0.00 sec)
+
+mysql> select*from ngoma where gender='f' or lname='ndayambaje';
++----------+------------+--------+----------+----------+--------+---------+-------------+------------+------+
+| fname    | lname      | gender | province | district | sector | cell    | email       | telephone  | id   |
++----------+------------+--------+----------+----------+--------+---------+-------------+------------+------+
+| set      | when       | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| theo     | when       | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| kagabo   | when       | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| theo     | when       | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| kagabo   | when       | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| evariste | ndayambaje | m      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| esther   | ndayambaje | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| abimana  | sandra     | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
+| abe      | sandrine   | f      | south    | huye     | ngoma  | ruhande | email@gmail | 0785562201 |    1 |
++----------+------------+--------+----------+----------+--------+---------+-------------+------------+------+
+9 rows in set (0.00 sec)
